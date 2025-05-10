@@ -2,6 +2,12 @@
 
 #### A simple and professional package for displaying beautiful toast notifications and confirmation alerts in your Laravel app.
 
+demo link
+
+## [demo](https://islamalsayed.github.io/test-itoast-package)
+
+Package download link
+
 ## [My Package](https://github.com/IslamAlsayed/itoast-and-confirm-package)
 
 ## ✅ Features
