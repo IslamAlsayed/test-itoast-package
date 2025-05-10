@@ -439,6 +439,7 @@ export const Itoast = {
 
 export const Confirm = {
   show(options) {
+    console.log("options", options);
     Itoast.show({
       type: options.type,
       title: options.title,
