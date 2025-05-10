@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Itoast Test</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/itoast.css">
+    <link rel="stylesheet" href="./assets/css/itoastTest.css">
+</head>
+
+<body>
+    <main class="main-section">
+        <h2>test everything</h2>
+
+        <!-- Multiple Toasters -->
+        <h4>itoast with types or themes</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-type="success">
+                success
+            </button>
+            <button class="action-btn itoast-error push-itoast-btn" data-type="error">
+                error
+            </button>
+            <button class="action-btn itoast-warn push-itoast-btn" data-type="warn">
+                warn
+            </button>
+            <button class="action-btn itoast-info push-itoast-btn" data-type="info">
+                info
+            </button>
+        </section>
+
+        <!-- Multiple Toasters -->
+        <h4>confirm with types or themes</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-confirm-btn" data-type="success">
+                success
+            </button>
+            <button class="action-btn itoast-error push-confirm-btn" data-type="error">
+                error
+            </button>
+            <button class="action-btn itoast-warn push-confirm-btn" data-type="warn">
+                warn
+            </button>
+            <button class="action-btn itoast-info push-confirm-btn" data-type="info">
+                info
+            </button>
+        </section>
+
+        <!-- Visible -->
+        <h4>duration visible</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-theme="success" data-duration="1s">
+                duration (1s)
+            </button>
+            <button class="action-btn itoast-error push-itoast-btn" data-theme="error" data-duration="3s">
+                duration (3s)
+            </button>
+            <button class="action-btn itoast-warn push-itoast-btn" data-theme="warn" data-duration="1m">
+                duration (1m)
+            </button>
+            <button class="action-btn itoast-info push-itoast-btn" data-theme="info" data-pin="pin">
+                duration infinite
+            </button>
+        </section>
+
+        <!-- Custom Confirm -->
+        <h4>custom confirm</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-confirm-btn" data-theme="success" data-title="save" data-icon="👍">
+                save record
+            </button>
+            <button class="action-btn itoast-info push-confirm-btn" data-theme="info" data-title="delete" data-icon="fa-question" data-onconfirm="Yes" data-onconfirmlink="/delete/7" data-oncancel="No">
+                delete record
+            </button>
+            <button class="action-btn itoast-error push-confirm-btn" data-theme="error" data-title="error" data-onconfirm="Yes" data-onconfirmlink="/error/6" data-oncancel="No">
+                error request
+            </button>
+        </section>
+
+        <!-- Actions داخل Confirm -->
+        <h4>custom actions</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-theme="success" data-actions='[{"label": "undo", "url": "#"}, {"label": "details", "url": "#"}]'>
+                itoast actions
+            </button>
+            <button class="action-btn itoast-info push-itoast-btn" data-theme="info" data-actions='[{"label": "undo", "url": "#", "target": "_blank"}, {"label": "learn more", "url": "#", "target": "_blank"}]'>
+                actions _blank
+            </button>
+            <button class="action-btn itoast-error push-confirm-btn" data-theme="error" data-actions='[{"label": "undo", "url": "#"}]'>
+                confirm actions
+            </button>
+            <button class="action-btn itoast-warn push-confirm-btn" data-theme="warn" data-actions='[{"label": "undo", "url": "#", "target": "_blank"}, {"label": "view", "url": "#", "target": "_blank"}]'>
+                actions _blank
+            </button>
+        </section>
+
+        <!-- itoast with emojis -->
+        <h4>itoast with emojis</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-type="success" data-emoji="✅">success ✅</button>
+            <button class="action-btn itoast-error push-itoast-btn" data-type="error" data-emoji="❌">error ❌</button>
+            <button class="action-btn itoast-warn push-itoast-btn" data-type="warn" data-emoji="⚠️">warn ⚠️</button>
+            <button class="action-btn itoast-info push-itoast-btn" data-type="info" data-emoji="ℹ️">info ℹ️</button>
+        </section>
+
+        <!-- confirm with emojis -->
+        <h4>confirm with emojis</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-confirm-btn" data-type="success" data-emoji="💾">save 💾</button>
+            <button class="action-btn itoast-error push-confirm-btn" data-type="error" data-emoji="🗑️">delete 🗑️</button>
+            <button class="action-btn itoast-warn push-confirm-btn" data-type="warn" data-emoji="⚠️">warn ⚠️</button>
+            <button class="action-btn itoast-info push-confirm-btn" data-type="info" data-emoji="🔍">info 🔍</button>
+        </section>
+
+        <!-- duration with emojis -->
+        <h4>duration with emojis</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-theme="success" data-duration="1s" data-emoji="🚀">1s 🚀</button>
+            <button class="action-btn itoast-error push-itoast-btn" data-theme="error" data-duration="3s" data-emoji="🔥">3s 🔥</button>
+            <button class="action-btn itoast-warn push-itoast-btn" data-theme="warn" data-duration="1m" data-emoji="⏳">1m ⏳</button>
+            <button class="action-btn itoast-info push-itoast-btn" data-theme="info" data-pin="pin" data-emoji="📌">infinite 📌</button>
+        </section>
+
+        <!-- confirm with emojis -->
+        <h4>custom confirm with emojis</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-confirm-btn" data-theme="success" data-title="save 💾" data-icon="👍">
+                save 💾
+            </button>
+            <button class="action-btn itoast-info push-confirm-btn" data-theme="info" data-title="delete 🗑️" data-icon="fa-question" data-onconfirm="Yes ✅" data-onconfirmlink="/delete/7" data-oncancel="No ❌">
+                delete record 🗑️
+            </button>
+            <button class="action-btn itoast-error push-confirm-btn" data-theme="error" data-title="error ❗" data-onconfirm="Yes 🚫" data-onconfirmlink="/error/6" data-oncancel="No 🔙">
+                error request ❗
+            </button>
+        </section>
+
+        <!-- actions with emojis -->
+        <h4>custom actions with emojis</h4>
+        <section class="section-test">
+            <button class="action-btn itoast-success push-itoast-btn" data-theme="success" data-actions='[{"label": "↩️ undo", "url": "#"}, {"label": "🔍 details", "url": "#"}]'>
+                itoast actions
+            </button>
+            <button class="action-btn itoast-info push-itoast-btn" data-theme="info" data-actions='[{"label": "↩️ undo", "url": "#", "target": "_blank"}, {"label": "📘 learn more", "url": "#", "target": "_blank"}]'>
+                actions _blank
+            </button>
+            <button class="action-btn itoast-error push-confirm-btn" data-theme="error" data-actions='[{"label": "↩️ undo", "url": "#"}]'>
+                confirm actions
+            </button>
+            <button class="action-btn itoast-warn push-confirm-btn" data-theme="warn" data-actions='[{"label": "↩️ undo", "url": "#", "target": "_blank"}, {"label": "👁️ view", "url": "#", "target": "_blank"}]'>
+                actions _blank
+            </button>
+        </section>
+
+        <!-- emojis test for itoast -->
+        <h4>😂 emojis test for itoast</h4>
+        <section class="section-test">
+            <button class="action-btn push-itoast-btn itoast-success" data-theme="success" data-emoji="🚀">
+                success 🚀
+            </button>
+            <button class="action-btn push-itoast-btn itoast-error" data-theme="error" data-emoji="😵‍💫">
+                error 😵‍💫
+            </button>
+            <button class="action-btn push-itoast-btn itoast-warn" data-theme="warn" data-emoji="🙃">
+                warn 🙃
+            </button>
+            <button class="action-btn push-itoast-btn itoast-info" data-theme="info" data-emoji="🤓">
+                info 🤓
+            </button>
+        </section>
+
+        <!-- funny confirm texts -->
+        <h4>🤪 funny confirm texts</h4>
+        <section class="section-test">
+            <button class="action-btn push-confirm-btn itoast-success" data-theme="success" data-title="confirm" data-onconfirm="أكيد يا نجم 🚀" data-oncancel="مش وقته دلوقتي 😅">
+                confirm rocket
+            </button>
+            <button class="action-btn push-confirm-btn itoast-warn" data-theme="warn" data-title="are you sure?" data-onconfirm="آه يا معلم 🤪" data-oncancel="لأ مش مستعد 🙃">
+                confirm funny
+            </button>
+            <button class="action-btn push-confirm-btn itoast-error" data-theme="error" data-title="delete" data-onconfirm="احذف وعيش 💀" data-oncancel="بلاش كده يا عم 🥺">
+                confirm delete
+            </button>
+        </section>
+
+        <!-- full emoji experience -->
+        <h4>🎭 full emoji experience</h4>
+        <section class="section-test">
+            <button class="action-btn push-confirm-btn itoast-info" data-theme="info" data-title="معلومة مهمة 🤓" data-message="إوعى تنسى تحفظ الشغل! 🤪" data-emoji="😏" data-onconfirm="تمام يا معلم 🚀" data-oncancel="خلينا نرجع 🙃">
+                full funny confirm
+            </button>
+        </section>
+
+        <!-- custom itoast or confirm -->
+        <h4>You can create a custom itoast or confirm</h4>
+        <section class="section-test section-form">
+            <form id="custom-toast-form">
+                <div class="groups">
+                    <div class="group">
+                        <select name="itoastType" id="itoastType" required>
+                            <option value="itoast">itoast</option>
+                            <option value="confirm">confirm</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <select name="theme">
+                            <option value="success">success</option>
+                            <option value="error">error</option>
+                            <option value="warn">warn</option>
+                            <option value="info">info</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="title">title</label>
+                        <input type="text" name="title" id="title" placeholder="Title" value="test title" />
+                    </div>
+                    <div class="group">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message" placeholder="Message" value="test message" />
+                    </div>
+                    <div class="group">
+                        <label for="duration">duration</label>
+                        <input type="text" name="duration" id="duration" placeholder="(number, 5s, 2m, 1h)" />
+                    </div>
+                    <div class="group">
+                        <label for="emoji">emoji</label>
+                        <input type="text" name="emoji" id="emoji" placeholder="(🙂,🙃,🤪,🤪,💖,🥰,🚀)" />
+                    </div>
+                    <div class="group">
+                        <label for="icon">icon</label>
+                        <input type="text" name="icon" id="icon" placeholder="(fa-user, fa-question)" />
+                    </div>
+                    <div class="group" style="display: none">
+                        <label for="onconfirm">onconfirm text</label>
+                        <input type="text" name="confirmText" id="confirm-text" placeholder="(Yes)" value="Yes" />
+                    </div>
+                    <div class="group" style="display: none">
+                        <label for="onconfirm">onconfirm link</label>
+                        <input type="text" name="confirmLink" id="confirm-link" placeholder="(www.link.com)" value="www.link.com" />
+                    </div>
+                    <div class="group" style="display: none">
+                        <label for="oncancel">oncancel text</label>
+                        <input type="text" name="cancelText" id="cancel-text" placeholder="(No)" value="No" />
+                    </div>
+                    <div class="group checkbox">
+                        <label for="pin">pin</label>
+                        <input type="checkbox" name="pin" id="pin" value="pin" />
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="actions">actions</label>
+                    <textarea name="actions" id="actions" placeholder='[{"label":"undo","url":"./"}]'>[{"label":"undo","url":"./"}]</textarea>
+                </div>
+                <button type="submit">Show</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+<script type="module" src="./assets/js/itoast.js"></script>
+
+</html>
